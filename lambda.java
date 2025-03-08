@@ -16,5 +16,7 @@ public class lambda {
         System.out.println("Ordenar: ");
         List<Integer>order = numbers.stream().sorted().toList();
         System.out.println("Numeros em ordem: " + order);
+        System.out.println("Imprimir: ");
+        numbers.stream().forEach(System.out :: println);
     }
 }
