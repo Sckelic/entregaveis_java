@@ -13,9 +13,11 @@ public class lambda {
         System.out.println("Transformar: ");
         List<Integer>transform = numbers.stream().map(n -> n * 2).collect(Collectors.toList());
         System.out.println("Numeros multiplicados por 2: " + transform);
+        System.out.println();
         System.out.println("Ordenar: ");
         List<Integer>order = numbers.stream().sorted().toList();
         System.out.println("Numeros em ordem: " + order);
+        System.out.println();
         System.out.println("Imprimir: ");
         numbers.stream().forEach(System.out :: println);
     }
