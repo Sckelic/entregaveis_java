@@ -9,5 +9,9 @@ public class lambda {
         System.out.println("Filtro: ");
         List<Integer>pares = numbers.stream().filter(n -> n % 2 == 0).collect(Collectors.toList());
         System.out.println("Numeros pares: " + pares);
+        System.out.println();
+        System.out.println("Transformar: ");
+        List<Integer>transform = numbers.stream().map(n -> n * 2).collect(Collectors.toList());
+        System.out.println("Numeros multiplicados por 2: " + transform);
     }
 }
